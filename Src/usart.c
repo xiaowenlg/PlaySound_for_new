@@ -21,6 +21,7 @@
 #include "usart.h"
 #include <stdlib.h>
 #include <stdarg.h>
+#include "BspConfig.h"
 //#include "MainConfig.h"
 /* USER CODE BEGIN 0 */
 #define  DEBUG
@@ -525,22 +526,8 @@ void sendstring(unsigned char *string,UART_HandleTypeDef *huart)
 {
 	while (*string)
 	{
-#if UART_MUTEX
-		xSemaphoreTake(xSemaphore, portMAX_DELAY);
-		{
-			HAL_UART_Transmit(huart, string, 1, 0xff);
-			string++;
-		}
-		xSemaphoreGive(xSemaphore);
-#elif UART_MUTEX==0
 		HAL_UART_Transmit(huart, string, 1, 0xff);
 		string++;
-#else
-		HAL_UART_Transmit(huart, string, 1, 0xff);
-		string++;
-#endif // MUTEX_ON
-
-		
 	}
 }
 
@@ -569,6 +556,17 @@ void Uartx_printf(UART_HandleTypeDef * huart,  char * fmt, ...)
 		i++;
 	}
 	va_end(arg_ptr);
+}
+void Uart_printf_Debug(UART_HandleTypeDef *huart, const char *fmt, ...)
+{
+#if UART_DEBUG==1
+	va_list ap;   //va_list 是一个字符指针，可以理解为指向当前参数的一个指针，取参必须通过这个指针进行
+	unsigned char string[128];
+	va_start(ap, fmt);//让ap指向可变参数表里面的第一个参数
+	my_vsprintf(string, fmt, ap);
+	va_end(ap);
+	sendstring(string, huart);
+#endif
 }
 /* USER CODE END 1 */
 

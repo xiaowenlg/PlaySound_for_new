@@ -63,6 +63,7 @@ HAL_StatusTypeDef MY_USART_chars(UART_HandleTypeDef *huart, uint8_t *pData);
 void sendstring(unsigned char *string, UART_HandleTypeDef *huart);
 void Uart_printf(UART_HandleTypeDef *huart, const char *fmt, ...);
 void Uartx_printf(UART_HandleTypeDef * huart, char * fmt, ...);
+void Uart_printf_Debug(UART_HandleTypeDef *huart, const char *fmt, ...);
 void MX_USART_UART_Init(UART_HandleTypeDef *huart, USART_TypeDef *uart, uint32_t baud);
 extern ReceMessage uart1_rec;
 extern ReceMessage uart2_rec;

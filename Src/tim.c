@@ -131,14 +131,14 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 					
 					if (waitTim++>5)
 					{
-						
+						Uart_printf(&huart2, "SportCount...%d\r\n",SportCount);
 						waitTim = 0;
 						if (SportCount!=0)
 						{
 							//Uart_printf(&huart2, "Begin play...\r\n");
 							ptMsg->playstate = 1;//播放标志位置位
 							pstate = 0;				//播放中标志
-							SportCount = 0;
+							SportCount = 0;//**********************************
 						}
 						
 					}
@@ -153,7 +153,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 				{
 					//Uart_printf(&huart2, "pstate...%d\r\n", pstate);
 					pstate = 0;
-					SportCount = 0;
+					//SportCount = 0;//*******************************删掉后可用
 					ptMsg->tim = 0;
 					ptMsg->hot = 0;
 				}
@@ -161,6 +161,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 			}
 			if (PERIOD_DO_EXECUTE(tick, SENDDATA)==0) //定时更新运动数据
 			{
+				
 				xQueueSendFromISR(xQueuel_sportmes, (void *)&ptMsg, &xHigherPriorityTaskWoken);//发送消息
 				portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 

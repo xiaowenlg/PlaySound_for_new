@@ -167,7 +167,7 @@ void DataDetection_CallBack(void const * argument)
 		  SportInfo_Get.playstate = ptMsg->playstate;
 		  xSemaphoreTake(xSemaphore_WTN6_TFT, portMAX_DELAY);
 		  {
-			  ///Uart_printf(&huart2, "playstate=%d, playcount=%d\r\n", SportInfo_Get.playstate,SportInfo_Get.count);
+			  Uart_printf_Debug(&huart2, "SportInfo_Get.count=%d  iscolsesystem=%d\r\n", SportInfo_Get.count, iscolsesystem);
 			  SendMessageToTFT(TFT_VARIABLE_START);
 			  SingleTrig(PlayCallback, SportInfo_Get.playstate, 0, 0, 1);
 			 
@@ -207,7 +207,7 @@ void DataInteraction_CallBack(void const * argument)//
 			  tick = 0;
 			  SYSIO = 1;
 			
-			 // Uart_printf(UART_CONNECTION, "System closed!\r\n");
+			  Uart_printf_Debug(UART_CONNECTION, "System closed!\r\n");
 		  }
 		  
 	  }
@@ -220,7 +220,7 @@ void DataInteraction_CallBack(void const * argument)//
 			  loop = 0;
 			  SYSIO = 1;
 			 
-			  //Uart_printf(UART_CONNECTION, "System closed---loop!\r\n");
+			  //Uart_printf(&huart2, "System closed---loop!\r\n");
 		  }
 	  }
 	  else
@@ -275,7 +275,8 @@ void PlayCallback(uint8_t val)//语音播放回调函数
 	//Uart_printf(&huart1, "playstate=%d   Sound is beginning...!\r\n",SportInfo_Get.playstate);
 	playdatalen = GetPlayData(SportInfo_Get.count, SportInfo_Get.tim, (double)SportInfo_Get.hot, playarray);
 	pstate = WTN6_PlayArray(playdatalen, playarray,1000);
-	iscolsesystem = pstate;
+	//Uart_printf(&huart2, "value==%d\r\n", pstate);
+	iscolsesystem = 1;
 	//Uart_printf(&huart2, "iscolsesystem is %d\r\n", iscolsesystem);
 }
 void  QF_CRC(uint8_t *dat, uint8_t len)

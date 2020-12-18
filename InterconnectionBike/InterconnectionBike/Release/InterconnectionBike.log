@@ -1,17 +1,94 @@
-﻿生成启动时间为 2020/12/16 8:02:41。
-     1>项目“E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj”在节点 2 上(Build 个目标)。
-     1>Build:
-         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj" "/solution:E:\QFProject\PlaySound_for_new\InterconnectionBike\PlaySound_ForNew.sln"  "/config:Release" "/platform:Win32"
-         VisualGDB: Run "C:\SysGCC\arm-eabi\bin\make.exe  CONFIG=Release -j8" in directory "E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike" on local computer
-         C:/SysGCC/arm-eabi/bin/arm-eabi-gcc.exe -ggdb -ffunction-sections -O3   -mcpu=cortex-m3 -mthumb -I..\..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include -I..\..\Drivers\STM32F1xx_HAL_Driver\Inc -I..\..\Drivers\STM32F1xx_HAL_Driver\Src -I..\..\Middlewares\Third_Party\FreeRTOS\Source\include -I..\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS -I..\..\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3 -I..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../Drivers/CMSIS/RTOS/Template -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Inc -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../../peripheral -I. -DNDEBUG=1 -DRELEASE=1 -Dflash_layout -DSTM32F103xB -DUSE_FREERTOS -DARM_MATH_CM3 -Dflash_layout -DSTM32F103CB  -c ../../Src/freertos.c -o Release/freertos.o -MD -MF Release/freertos.dep
-         C:/SysGCC/arm-eabi/bin/arm-eabi-gcc.exe -ggdb -ffunction-sections -O3   -mcpu=cortex-m3 -mthumb -I..\..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include -I..\..\Drivers\STM32F1xx_HAL_Driver\Inc -I..\..\Drivers\STM32F1xx_HAL_Driver\Src -I..\..\Middlewares\Third_Party\FreeRTOS\Source\include -I..\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS -I..\..\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3 -I..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../Drivers/CMSIS/RTOS/Template -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Inc -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../../peripheral -I. -DNDEBUG=1 -DRELEASE=1 -Dflash_layout -DSTM32F103xB -DUSE_FREERTOS -DARM_MATH_CM3 -Dflash_layout -DSTM32F103CB  -c ../../Src/tim.c -o Release/tim.o -MD -MF Release/tim.dep
-         C:/SysGCC/arm-eabi/bin/arm-eabi-g++.exe -o Release/InterconnectionBike.elf -Wl,-gc-sections --specs=nano.specs --specs=nosys.specs -TC:\Users\Administrator\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\2019.06/STM32F1xxxx/LinkerScripts/STM32F103CB_flash.lds  -mcpu=cortex-m3 -mthumb   -Wl,--start-group Release/WTN6.o Release/application.o Release/APPTooL.o Release/dwt_stm32_delay.o Release/gpio.o Release/adc.o Release/freertos.o Release/tim.o Release/usart.o Release/stm32f1xx_it.o Release/stm32f1xx_hal_msp.o Release/main.o Release/system_stm32f1xx.o Release/stm32f1xx_hal.o Release/stm32f1xx_hal_adc.o Release/stm32f1xx_hal_adc_ex.o Release/stm32f1xx_hal_uart.o Release/stm32f1xx_hal_pwr.o Release/stm32f1xx_hal_flash.o Release/stm32f1xx_hal_flash_ex.o Release/stm32f1xx_hal_gpio.o Release/croutine.o Release/event_groups.o Release/list.o Release/queue.o Release/tasks.o Release/timers.o Release/cmsis_os.o Release/heap_4.o Release/port.o Release/stm32f1xx_hal_usart.o Release/stm32f1xx_hal_rcc.o Release/stm32f1xx_hal_rcc_ex.o Release/stm32f1xx_hal_cortex.o Release/stm32f1xx_hal_tim.o Release/stm32f1xx_hal_tim_ex.o Release/stm32f1xx_hal_dma.o Release/startup_stm32f103xb.o Release/stm32f1xx_hal_gpio_ex.o     -Wl,--end-group
-         C:/SysGCC/arm-eabi/bin/arm-eabi-objcopy.exe -O binary Release/InterconnectionBike.elf Release/InterconnectionBike.bin
-         ------------------- Memory utilization report -------------------
-         Used FLASH: 25KB out of 128KB (19%) [-52]
-         Used SRAM: 14KB out of 20KB (70%)
-     1>已完成生成项目“E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj”(Build 个目标)的操作。
+﻿生成启动时间为 2020/12/18 14:58:32。
+     1>项目“E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj”在节点 2 上(Clean 个目标)。
+     1>CoreClean:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /clean "E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj" "/solution:E:\QFProject\PlaySound_for_new\InterconnectionBike\PlaySound_ForNew.sln"  "/config:Release" "/platform:Win32"
+         VisualGDB: Run "C:\SysGCC\arm-eabi\bin\make.exe  CONFIG=Release clean -j8" in directory "E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike" on local computer
+         cmd /C del /S /Q Release
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\adc.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\adc.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\application.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\application.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\APPTooL.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\APPTooL.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\cmsis_os.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\cmsis_os.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\croutine.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\croutine.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\dwt_stm32_delay.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\dwt_stm32_delay.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\event_groups.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\event_groups.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\freertos.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\freertos.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\gpio.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\gpio.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\heap_4.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\heap_4.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\InterconnectionBike.bin
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\InterconnectionBike.elf
+         E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\InterconnectionBike.log
+         另一个程序正在使用此文件，进程无法访问。
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\InterconnectionBike.progstat
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\list.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\list.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\main.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\main.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\port.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\port.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\queue.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\queue.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\startup_stm32f103xb.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\startup_stm32f103xb.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_adc.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_adc.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_adc_ex.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_adc_ex.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_cortex.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_cortex.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_dma.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_dma.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_flash.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_flash.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_flash_ex.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_flash_ex.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_gpio.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_gpio.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_gpio_ex.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_gpio_ex.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_msp.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_msp.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_pwr.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_pwr.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_rcc.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_rcc.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_rcc_ex.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_rcc_ex.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_tim.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_tim.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_tim_ex.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_tim_ex.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_uart.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_uart.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_usart.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_hal_usart.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_it.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\stm32f1xx_it.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\system_stm32f1xx.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\system_stm32f1xx.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\tasks.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\tasks.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\tim.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\tim.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\timers.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\timers.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\usart.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\usart.o
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\WTN6.dep
+         删除文件 - E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\Release\WTN6.o
+     1>已完成生成项目“E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj”(Clean 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.01
+已用时间 00:00:01.66

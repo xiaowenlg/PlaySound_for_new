@@ -21,7 +21,7 @@
 #define  UART_BLE				&huart1			//蓝牙
 #define  UART_CONNECTION		&huart2			//互联接口	
 #define  UART_TFT				&huart3			//TFT屏(武汉晶显)
-
+#define  UART_DEBUG				1              //Uart调试开关
 #define SERIALDATLEN			20				//上传数据长度
 //周期内分段运行
 #define TIMER_ALL_PERIOD        10            //单位ms  定时器运行周期(大周期)
