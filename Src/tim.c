@@ -131,7 +131,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 					
 					if (waitTim++>5)
 					{
-						Uart_printf(&huart2, "SportCount...%d\r\n",SportCount);
+						//Uart_printf(&huart2, "SportCount...%d\r\n",SportCount);
 						waitTim = 0;
 						if (SportCount!=0)
 						{

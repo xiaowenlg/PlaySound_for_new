@@ -21,7 +21,7 @@
 #define  UART_BLE				&huart1			//蓝牙
 #define  UART_CONNECTION		&huart2			//互联接口	
 #define  UART_TFT				&huart3			//TFT屏(武汉晶显)
-#define  UART_DEBUG				1              //Uart调试开关
+#define  UART_DEBUG				0              //Uart调试开关
 #define SERIALDATLEN			20				//上传数据长度
 //周期内分段运行
 #define TIMER_ALL_PERIOD        10            //单位ms  定时器运行周期(大周期)
@@ -76,7 +76,12 @@ typedef struct SportInfo      //运动信息
 //错误信息列表
 #define ERROR_XQUEUE_CREAT				0x01			//消息队列创建错误
 
-
+//计算外部电源电压，用来设置低电压关机
+#define R_UP							39.00				//上偏置电阻	K
+#define R_DOWN							15.00				//下偏置电阻	K
+#define CAL_K_RES(voltage)				((R_UP+R_DOWN)/R_DOWN)*voltage         //计算电池电压值
+#define VOLTAGE_T						2000				//电压检测周期单位ms
+#define POWER_VOLTAGE_LOW				9800				//系统要求最低电压单位mV
 //不同器材不同参数
 #define CAL_K							7				//cal系数
 #define EMID         "00010000300007000090"

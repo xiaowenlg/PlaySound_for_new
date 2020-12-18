@@ -57,7 +57,7 @@ void write_multiple_register_80(uint8_t address, uint8_t data_length, uint8_t *d
 
 	nDataLen = array[2] + 3;        //有效命令长度
 
-	MY_USART_SendData(UART_TFT, array, nDataLen);
+	HAL_UART_Transmit(UART_TFT, array, nDataLen, 0xffff);
 }
 //************************************
 // 函数:    write_variable_store_82_1word
