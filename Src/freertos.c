@@ -199,7 +199,7 @@ void DataInteraction_CallBack(void const * argument)//
   for(;;)
   {
 	  //Uart_printf(UART_CONNECTION, "System closed!\r\n");
-	 // Uart_printf(&huart2, "SportCount==%d\r\n",SportInfo_Get.count);
+	  Uart_printf(&huart2, "SportCount==%d\r\n",SportInfo_Get.count);
 	  SingleTrig(SensorCallBack, HAL_GPIO_ReadPin(Sensor_Mag_GPIO_Port, Sensor_Mag_Pin), 0, 1, 0);
 	  if (iscolsesystem == 1)
 	  {

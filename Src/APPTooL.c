@@ -240,7 +240,7 @@ uint8_t PrepartData(uint16_t dat, uint8_t *res_dat)// 语音地址分解计算
 
 	return len;//返回数组长度
 }*/
-uint8_t PrepartData(uint16_t dat, uint8_t *res_dat)// 语音地址分解计算
+uint8_t PrepartData(uint16_t dat, uint8_t *res_dat)// 语音地址分解计算----------------旧语音芯片
 {
 	uint8_t len, q, b, s, g;
 	if (dat > 9999)

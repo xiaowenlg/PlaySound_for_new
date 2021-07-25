@@ -180,6 +180,7 @@ void SensorCallBack(uint8_t v)//计次回调函数
 	SportCount++;
 	ptMsg->count = SportCount;
 	iscolsesystem = 0;
+	ptMsg->playstate = 0;   ////新加的一句防止播放状态不清0
 	SYSIO = 0;
 	//TFT_Beep(2);// bi-bi 声音
 	//Line_2A_WTN6(0);

@@ -81,9 +81,9 @@ typedef struct SportInfo      //运动信息
 #define R_DOWN							15.00				//下偏置电阻	K
 #define CAL_K_RES(voltage)				((R_UP+R_DOWN)/R_DOWN)*voltage         //计算电池电压值
 #define VOLTAGE_T						2000				//电压检测周期单位ms
-#define POWER_VOLTAGE_LOW				9800				//系统要求最低电压单位mV
+#define POWER_VOLTAGE_LOW				9500				//系统要求最低电压单位mV
 //不同器材不同参数
-#define CAL_K							7				//cal系数
+#define CAL_K							5				//cal系数
 #define EMID         "00010000300007000090"
 //
 
