@@ -1,4 +1,4 @@
-﻿生成启动时间为 2021/8/1 10:59:54。
+﻿生成启动时间为 2021/8/19 10:09:10。
      1>项目“E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj”在节点 2 上(Build 个目标)。
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "E:\QFProject\PlaySound_for_new\InterconnectionBike\InterconnectionBike\InterconnectionBike.vcxproj" "/solution:E:\QFProject\PlaySound_for_new\InterconnectionBike\PlaySound_ForNew.sln"  "/config:Release" "/platform:Win32"
@@ -20,4 +20,4 @@
 
 生成成功。
 
-已用时间 00:00:03.53
+已用时间 00:00:04.35
